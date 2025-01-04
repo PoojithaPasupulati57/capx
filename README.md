@@ -1,3 +1,4 @@
+<pre>
 PROJECT NAME:"SIMPLE STOCK PROTFOLIO"
 
 PROJECT DESCRIPTION: The CapX Project is a web application built using Flask, designed to manage and track stock data, handle user authentication, and send email notifications with OTP (One-Time Password) for secure user actions.
@@ -61,7 +62,7 @@ STEP6:
 STEP7:(Deployment Links)
 FRONTEND:
 BACKEND:
-
+</pre>
 
   
 
