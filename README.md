@@ -62,6 +62,14 @@ STEP6:
 
 STEP7:(Deployment Links)
 FRONTEND:
+       ->Base URL:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app
+       ->Add.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/Add.html
+       ->Dashboard.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/Dashboard.html
+       ->login.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/login.html
+       ->otp.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/otp.html
+       ->signup.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/signup.html
+       ->stocktable.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/stocktable.html
+       ->update.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/update.html
 BACKEND:
 </pre>
 
