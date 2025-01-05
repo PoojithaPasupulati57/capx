@@ -12,7 +12,7 @@ STEP2:
 1.After opening above Link.
 2.Create a folder in your local system(ex:capx)
 3.Copy the templates folder that contain in frontend and paste in capx folder.
-4.copy all files that contain in backend folder and paste it line by line in capx folder.
+4.copy all files that contain in backend folder and paste it line by line in capx folder(make sure to unpack the folders).
 
 STEP3:
 1.Open ur Mysql command line client.
@@ -52,9 +52,10 @@ STEP5:
 6.now run the app by using-py app.py
 7.copy the url and paste it.
 8.later create ur account and login.
-9.after login the dashboard looks empty .so click on stock table(because to insert data in stock table)
+9.after login the dashboard looks empty except table .so click on stock table(because to insert data in stock table)
 10.After viewing stock table.click on url and paste your baseurl and /stockdata(ex:http://127.0.0.1:5000/stockdata)-by using this we can generate data by api_url(alpha vantage) with limit 25 per day
 11.after viewing stock data click on(<-) backward arrow and u will come back to dashboard and refresh it (so that dashboard generate current prices of stockdata,total value,protfolio distribution)
+12.Now you can see the dashboard with updated.       
 
 STEP6:
 1.now you add or update or delete the record but after doing any operations.please make sure you call stockdata route(ex:http://127.0.0.1:5000/stockdata) after perform any operations such as add,delete,update etc.. and refersh dashboard to view total value etc..
