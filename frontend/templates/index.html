@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE STOCK</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /*border:1px solid black;*/
+        }
+        .head{
+            color:white;
+            background-color: green;
+            text-align: center;
+            font-size: large;
+            height:10vh;
+        
+        }
+        .head1{
+            position: relative;
+            top:30%;
+        }
+        .body{
+            background-color: white;
+            height:90vh;
+            position: relative;
+            top:30%;
+        }
+        button{
+            color:white;
+            font-weight: bold;
+            font-size: large;
+            background-color: green;
+            height: 5vh;
+            border-radius: 5px;
+            border-color: white;
+        }
+        .b1{
+            width: 22vw;
+            position: relative;
+            left:43%;
+            top:33%;
+        }
+        .b2{
+            width:22vw;
+            position: relative;
+            left:43%;
+            top:36%;
+        }
+        
+    </style>
+</head>
+<body>
+    <!--HEAD PART-->
+    <section class="head">
+        <div class="head1">
+            <h1>Simple Protofolio Tracker</h1>
+        </div>
+    </section>
+    <!--Body-->
+    <section class="body">
+       <div class="b1">
+        <a href="{{url_for('create')}}"><button>CREATE ACCOUNT</button></a>
+       </div>
+       <div class="b2">
+        <a href="{{url_for('login')}}"><button>LOGIN ACCOUNT</button></a>
+       </div>
+
+    </section>
+</body>
+</html>

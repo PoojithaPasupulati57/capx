@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*{
+            box-sizing: border-box;
+            border:1px solid black;
+
+        }*/
+        .one{
+            text-align: center;
+            color:white;
+            font-weight: bold;
+            height:12vh;
+            background-color: green;
+        }
+        h1{
+            position: relative;
+            top:20%;
+            font-size: 50px;
+        }
+        table{
+            height:68vh;
+            width: 90vw;
+            text-align: center;
+            position: relative;
+            left:5%;
+            
+        }
+        th{
+            font-size:xx-large;
+            color: green;
+        }
+        td{
+            font-weight: bold;
+            font-size: large;
+        }
+        button{
+            color: white;
+            background-color: green;
+            font-weight: bold;
+            width:50%;
+            height: 5vh;
+            border-radius: 5px;
+            border:1px solid white;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        <h1>Stock Data</h1>
+    </div>
+    <table cellspacing="3px">
+        <tr>
+            <th>stock_id</th>
+            <th>Stock name</th>
+            <th>Quantity</th>
+            <th>Ticker</th>
+            <th>Buy price</th>
+            <th>Options</th>
+            <th>Options</th>
+    
+        </tr>
+        {% for i in notesdata %}
+        <tr>
+            <td>{{ i[0] }}</td>
+            <td>{{ i[1] }}</td>
+            <td>{{ i[2] }}</td>
+            <td>{{ i[3] }}</td>
+            <td>${{ i[4] }}</td>
+
+            <td><a href="{{url_for('update',nid=i[0])}}"><button>Update</button></a></td>
+            
+            
+            <td><a href="{{url_for('delete',nid=i[0])}}"><button>delete</button></a></td>
+            
+        </tr>
+        {% endfor %}
+       
+    </table>
+    
+</body>
+</html>

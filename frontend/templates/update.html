@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UPDATE STOCK</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            /*border:1px solid black;*/
+        }
+        .head{
+            color:white;
+            background-color: green;
+            text-align: center;
+            font-size: large;
+            height:10vh;
+        
+        }
+        .head1{
+            position: relative;
+            top:30%;
+        }
+        .body{
+            background-color: white;
+            height:90vh;
+            position: relative;
+            top:30%;
+        }
+        .body1{
+            position: relative;
+            top:30%;
+            
+        }
+        .body1 label{
+            font-weight: bold;
+            font-size: 120%;
+        }
+        input{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-radius: 5px;
+        }
+        .f1{
+            position: relative;
+            top:40%;
+            left:25%;
+            width:22vw;
+            
+           
+        }
+        .f2{
+            position: relative;
+            top:40%;
+            left:35%;
+            height:8vh;
+        }
+        .form1{
+            display: flex;
+            flex-direction: row;
+        }
+        .form2{
+            display: flex;
+            flex-direction: row;
+        }
+        .f3{
+            position: relative;
+            top:45%;
+            left:25%;
+            width:22vw;
+            height:5vh;
+        
+        
+        }
+        .f4{
+            position: relative;
+            top:50%;
+            left:35%;
+        }
+        button{
+            color:white;
+            font-weight: bold;
+            font-size: large;
+            background-color: green;
+            position:relative;
+            left:46%;
+            width:7%;
+            height: 5vh;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!--HEAD PART-->
+    <section class="head">
+        <div class="head1">
+            <h1>UPDATE STOCK</h1>
+        </div>
+    </section>
+    <!--Body-->
+    <section class="body">
+        <div class="body1">
+            <form method="post">
+                <div class="form1">
+                <div class="f1">
+                <label>Stock Name:</label>
+                <input type="text" placeholder="Stock Name" name="stockname" value="{{notesdata[1]}}"/><br/>
+                </div>
+                <div class="f2">
+                <label>Ticker:</label>
+                <input type="text" placeholder="Ticker" name="ticker" value="{{notesdata[3]}}"/><br/>
+                </div>
+                </div>
+                <div class="form2">
+                <div class="f3">
+                <label>Quantity:</label>
+                <input type="number" placeholder="Quantity" name="quantity"/><br/>
+                </div>
+                <div class="f4">
+                <label>Buy Price:</label>
+                <input type="number" placeholder="Price" name="buyprice"/><br/>
+                </div>
+                </div>
+                <a href="{{url_for('dashboard')}}"><button>Submit</button></a>
+            </form>
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        /*{
+            border:1px solid black;
+        }
+        .main{
+           
+
+        }*/
+        .head{
+            background-color: green;
+            color:white;
+            font-weight: bold;
+            height:12vh;
+            text-align: center;
+        }
+        form{
+            height:88vh;
+        }
+        .h1{
+            position: relative;
+            top:25%;
+            font-size:xx-large;
+        }
+        label{
+            font-weight: bold;
+            font-size: 140%;
+        }
+        input{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-radius: 5px;
+        }    
+       button{
+            color:white;
+            font-weight: bold;
+            font-size: large;
+            background-color: green;
+            /*width:7%;*/
+            height: 5vh;
+            border-radius: 5px;
+        }
+        .b1{
+            position:relative;
+            left:40%;
+            top:20%;
+            width:20vw;
+            
+        }
+        input{
+            padding-right: 35%;
+        }
+        .b2{
+            position: relative;
+            width:12vw;
+            top:25%;
+            left:45%;
+        }
+
+    </style>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <center style="color: rgb(16, 11, 6); font-size:xx-large; font-weight:bold;">{{ message }}</center>
+    {% endfor %}  
+  {% endif %}
+{% endwith %}
+<body>
+    <!--sign up-->
+    <section class="main">
+        <div class="head">
+            <h1 class="h1">Enter OTP</h1>
+        </div>
+    </section>
+    <section class="main1">
+        <div class="body">
+            <form method="post">
+                <div class="b1">
+                <label>OTP:</label><br/>
+                <input type="text" placeholder="Enter OTP" name="otp" required/>
+                </div>
+                <div class="b2">
+                    <button>SUBMIT</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>  
+    
+</body>
+</html>

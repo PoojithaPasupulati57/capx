@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN</title>
+    <style>
+        /*{
+            border:1px solid black;
+        }
+        .main{
+           
+
+        }*/
+        .head{
+            background-color: green;
+            color:white;
+            font-weight: bold;
+            height:12vh;
+            text-align: center;
+        }
+        form{
+            height:88vh;
+        }
+        .h1{
+            position: relative;
+            top:25%;
+            font-size:xx-large;
+        }
+        label{
+            font-weight: bold;
+            font-size: 140%;
+        }
+        input{
+            padding-top: 6px;
+            padding-bottom: 6px;
+            border-radius: 5px;
+        }    
+       button{
+            color:white;
+            font-weight: bold;
+            font-size: large;
+            background-color: green;
+            /*width:7%;*/
+            height: 5vh;
+            border-radius: 5px;
+        }
+        .b1{
+            position:relative;
+            left:40%;
+            top:20%;
+            width:20vw;
+            
+        }
+        .b2{
+            position:relative;
+            left:40%;
+            top:25%;
+            width:20vw;
+        }
+        .b3{
+            position:relative;
+            left:40%;
+            top:30%;
+            width:20vw;
+        }
+        .b4{
+            position:relative;
+            left:39%;
+            top:34%;
+            width:20vw;
+            text-align: center;
+        }
+        input{
+            padding-right: 35%;
+            
+        }
+
+    </style>
+</head>
+{% with messages = get_flashed_messages() %}
+  {% if messages %}
+    {% for message in messages %}
+      <center style="color: rgb(18, 14, 10); font-size:xx-large; font-weight:bold; ">{{ message }}</center>
+    {% endfor %}  
+  {% endif %}
+{% endwith %}
+<body>
+    <!--sign up-->
+    <section class="main">
+        <div class="head">
+            <h1 class="h1">.LOGIN</h1>
+        </div>
+    </section>
+    <section class="main1">
+        <div class="body">
+            <form method="post">
+                <div class="b1">
+                <label>Username:</label><br/>
+                <input type="text" placeholder="username" name="username" required/>
+                </div>
+                <div class="b2">
+                    <label>Email:</label><br/>
+                    <input type="email" placeholder="email" name="email" required/>
+                </div>
+                <div class="b3">
+                    <label>Password:</label><br/>
+                    <input type="password" placeholder="password" name="password" required/>
+                </div>
+                <div class="b4">
+                    <a href="{{url_for('dashboard')}}"><button>LOGIN</button></a>
+                </div>
+
+            </form>
+        </div>
+    </section>  
+    
+</body>
+</html>
