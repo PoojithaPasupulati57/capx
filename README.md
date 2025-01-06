@@ -34,8 +34,8 @@ STEP4:
                        ->copy the Your app password for your device(ex:Abcd efgh Ijkl mnop) and click on done.
                        ->now open cmail.py and paste ur password in email_paassword.
   iii.make sure you paste email_user and email_password in '' in single quotes.    
-  iv.open app.py in line 14 when we are giving sql connection change password="your mysql password" and change database="your database name" where tables are stored.
-  v.AT line 19 in app.py .generate your api_key in alpha vantage website and paste it.
+  iv.open app.py in line 16 when we are giving sql connection change password="your mysql password" and change database="your database name" where tables are stored.
+  v.AT line 40 in app.py .generate your api_key in alpha vantage website and paste it.
   
 STEP5:
 1.After code .(which has done in step 4)
@@ -58,7 +58,7 @@ STEP5:
 12.Now you can see the dashboard with updated.       
 
 STEP6:
-1.now you add or update or delete the record but after doing any operations.please make sure you call stockdata route(ex:http://127.0.0.1:5000/stockdata) after perform any operations such as add,delete,update etc.. and refersh dashboard to view total value etc..
+1.now you can add or update or delete the record but after doing any operations.please make sure you call stockdata route(ex:http://127.0.0.1:5000/stockdata) after perform any operations such as add,delete,update etc.. and refersh dashboard to view total value etc..
 
 STEP7:(Deployment Links)
 FRONTEND:
@@ -70,7 +70,9 @@ FRONTEND:
        ->signup.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/signup.html
        ->stocktable.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/stocktable.html
        ->update.html:https://frontend-5ijqf4o3r-poojithas-projects-2047ac8a.vercel.app/update.html
-BACKEND:
+
+       
+BACKEND:http://testung-env.eba-fbsb6rgw.ap-south-1.elasticbeanstalk.com/
 </pre>
 
   
